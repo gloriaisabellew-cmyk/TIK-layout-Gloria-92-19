@@ -1,0 +1,57 @@
+body{
+    background-color: azure;
+    background-image: url(2a628cc5113be3f85763dd6a32f84a64.jpg);
+    background-size: cover;
+    background-position: center;
+}
+img.ukuran{
+    height: 200px;
+    width: 200px;
+}
+img.lenkungan{
+    border-radius: 0% 0% 0% 20%;
+    height: 300px;
+    width: 250px;
+}
+img.border{
+    height: 200px;
+    width: 200px;
+    border: 5px solid rgb(253, 255, 196);
+    border-radius: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: inset;
+}
+div.kelompok{
+    height: 400px;
+    width: 400px;
+    background-color: cadetblue;
+    border-radius: 25%;
+    border-style:double;
+    text-align: center;
+}
+
+div.kelompok img{
+    height: 350px;
+    width: 350px;
+    border-radius: 20%;
+}
+div.efek{
+    height: 350px;
+    width: 350px;
+    background-color: rgb(255, 204, 230);
+    border-radius: 40px;
+    text-align: center;
+}
+div.efek img{
+    height: 240px;
+    width: 240px;
+    border-radius: 0%;
+}
+div.efek :hover{
+    height:450px;
+    width: 450px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 165);
+    box-shadow: 15px 15px 10px rgb(29, 29, 63);
+}

@@ -1,0 +1,231 @@
+@font-face{
+    font-family:"popin";
+    src: url(Poppins-Bold.ttf);
+}
+
+@font-face{
+    font-family:"Poppins";
+    src: url(light.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* style header */
+.header1{
+    background-color: azure;
+    padding: 20px;
+    text-align: center;
+    font-family: "popin";
+}
+/* style untuk menu */
+.topnav{
+    overflow: hidden;
+    background-color:steelblue;
+    font-family: "popin";
+}
+/* style untuk menu/topnav link */
+.topnav a{
+    float: left;
+    display: block;
+    color:lightblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: cornsilk;
+    color:midnightblue;
+}
+h2{
+    font-family: "popin";
+}
+h1.a{
+    background-color: azure;
+    padding: 20px;
+    text-align: center;
+    font-family: "popin";
+}
+.footer{
+    font-family: "popin";
+    color: rgb(15, 64, 106);
+    text-align: center;
+}
+@font-face{
+    font-family:"popin";
+    src: url(Poppins-Bold.ttf);
+}
+
+@font-face{
+    font-family:"Poppins";
+    src: url(light.ttf);
+}
+
+
+h3{
+    font-family: "popin";
+    color: rgb(8, 32, 103);
+    text-align: center;
+}
+ol{
+    font-family: "Poppins";
+    background-color:lightsteelblue;
+    color: rgb(8, 32, 103);
+    border: 1px solid black;
+    list-style-type: upper-roman;
+    padding: 15px 30px;
+    margin: 10px;
+    list-style-position: inside;
+}
+
+li.a{
+    background-color:cornflowerblue;
+    border: 1px solid black;
+}
+li.jambu{
+    font-family: "popin";
+    background-color: midnightblue;
+    color: mintcream;  
+    border: 2px solid azure;
+}
+ol li{ background-color: cornflowerblue;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border: 2px solid rgb(18, 18, 59);
+    text-align: justify;
+}
+ol li:hover{
+    background-color: aliceblue;
+}
+li.jambu:hover{
+    background-color: rgb(69, 69, 109);
+}
+
+
+ul{
+    font-family: "Poppins";
+    background-color:lightpink;
+    border: 3px solid hotpink;
+    list-style-type: circle;
+    padding: 15px 30px;
+    margin: 10px;
+    list-style-position: inside;
+}
+li.b{border: 3px solid palevioletred;
+color:rgb(158, 21, 65);
+}
+
+ul li{ background-color:honeydew;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border: 2px solid rgb(166, 13, 67);
+    text-align: justify;
+}
+ul li:hover{
+    background-color:snow;
+}
+
+ul.c{
+    font-family: "Poppins";
+    background-color:palegoldenrod;
+    border: 3px solid rgb(255, 230, 0);
+    list-style-type: circle;
+    padding: 15px 30px;
+    margin: 10px;
+    list-style-position: inside;
+}
+li.c{border: 3px solid rgb(216, 186, 49);
+color:rgb(93, 93, 12);
+}
+
+ul li{ background-color:lemonchiffon;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border: 2px solid goldenrod;
+    text-align: justify;
+}
+ul li:hover{
+    background-color:snow;
+}
+
+
+/* table */
+table, th, td{
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    font-family: "Poppins";
+}
+@font-face{
+    font-family:"Poppins";
+    src: url(light.ttf);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    height: 30px;
+    background-color: navy;
+}
+td{
+    text-align: center;
+    padding: 5px;
+}
+th:hover{
+    background-color:lightpink;
+}
+tr:nth-child(even){
+    background-color:lightskyblue;
+}
+tr:nth-child(even):hover{
+    background-color:azure;
+}
+tr:nth-child(odd){
+    background-color:skyblue;
+}
+tr:nth-child(odd):hover{
+    background-color:cornflowerblue;
+}
+
+/* table marge */
+table, th, td{
+    border: 2px solid;
+    border-color: rgb(10, 36, 79);
+    text-align: center;
+    padding: 10px;
+    font-family: "popin";
+    
+}
+@font-face{
+    font-family:"popin";
+    src: url(Poppins-Bold.ttf);
+}
+table{
+    border-collapse: collapse;
+    border-color:midnightblue;
+    color:khaki;
+}
+th:nth-child(even){
+    background-color:rgb(32, 147, 219);
+}
+th:nth-child(even):hover{
+    background-color:lightblue;
+}
+th:nth-child(odd){
+    background-color:rgb(11, 104, 151);
+}
+th:nth-child(odd):hover{
+    background-color:lemonchiffon;
+}
+body{
+    background-color:cornsilk;
+}
+h2{
+    text-align: center;
+    color: midnightblue;
+}
+

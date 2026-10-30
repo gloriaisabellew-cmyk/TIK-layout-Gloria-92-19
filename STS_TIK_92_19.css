@@ -1,0 +1,844 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(118, 170, 255);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "popin";
+    src: url(Poppins-Bold.ttf);
+}
+
+@font-face{
+    font-family: "zola";
+    src: url(Zolla.ttf);}
+
+    @font-face {
+        font-family: "jambo";
+        src: url(DK\ Jambo.otf);
+    }
+.navbar{
+    text-decoration: none;
+    background-color: rgb(13, 76, 116);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    font-size: 22px;
+    position: relative;
+}
+
+.nav-brand {
+    color: #ff9327;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: "jambo";
+    text-shadow: 0 0 5px rgb(223, 85, 61), 0 0 25px rgb(223, 85, 61);
+}
+
+.nav-brand:hover{
+    overflow:visible;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+a{
+    background-color: rgb(0, 0, 108);
+    box-shadow: 0 0 5px lightblue, 0 0 25px lightblue;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "zola";
+    color: rgb(255, 255, 173);
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+a:hover{
+    overflow:visible;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+h1{
+    margin-top:40px;
+    font-size: 50px;
+    font-family: "zola";
+    background-size: 300%;
+    background-position: -100%;
+    color: crimson;
+    text-shadow: 0 0 5px pink, 0 0 25px pink;
+}
+h1:hover{
+    overflow: visible;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    color: maroon;
+}
+h2{
+    text-spacing-trim: 10px;
+    margin-bottom: 40px;
+    font-size: 27px;
+    font-family: "jambo";
+    color: burlywood;
+    position: relative;
+    align-items: center;
+    text-shadow: 0 0 5px rgb(223, 85, 61), 0 0 25px rgb(223, 85, 61);
+}
+
+h2:hover{
+    overflow: visible;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    height: 500px;
+}
+
+
+
+.flex-card-container {
+    position: relative;
+
+    height: 400px;
+    width: 100px;
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 15px;
+
+    transition: 0.5s;
+
+    cursor: pointer;
+
+    overflow: hidden;
+}
+
+
+.flex-card-container.active {
+    width: 500px;
+}
+
+
+
+.usjd {
+    background-image: url(usjdepan.jpg);
+}
+
+
+.hwod {
+    background-image: url(hwod2.jpg);
+}
+
+.heri {
+    background-image:url(heripoter.jpg);
+}
+.jur{
+    background-image: url(jurassic.jpg);
+}
+.mario{
+    background-image: url(ihkerenbingutnitendo.jpg);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
+    opacity: 0;
+    transition: 0.5s;
+    color: azure;
+}
+
+
+.flex-card-container.active .overlay {
+    opacity: 1;
+}
+
+
+.overlay h3 {
+    margin: 0;
+    text-align: left;
+    font-size: 24px;
+}
+
+.overlay p {
+    margin: 5px 0 0;
+text-align: left;
+    font-size: 18px;
+}
+
+#overview{
+    display: flex;
+    justify-content: center;
+    word-spacing: 2px;
+}
+
+.about{
+    background-color: aliceblue;
+    border-radius: 20px;
+    width: 990px;
+    height: fit-content;
+    padding: 5px;
+    text-align: justify;
+    text-indent: 10px;
+    word-spacing: 2px;
+}
+
+.about:hover{
+    overflow:visible;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+h3{
+    font-family: "jambo";
+    color: cornflowerblue;
+    text-shadow:0 0 5px cyan, 0 0 25px cyan;
+    font-size:30px;
+}
+
+h3:hover{
+    overflow:visible;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+p.a{
+    word-spacing: 1px;
+    color: rgb(12, 12, 80);
+    font-family: "popin";
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-top: 1px;
+}
+p.b{
+    word-spacing: 1px;
+    color: rgb(12, 12, 80);
+    font-family: "popin";
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-top: 1px;
+    text-indent: 15px;
+}
+
+p.c{
+    word-spacing: 1px;
+    color: rgb(12, 12, 80);
+    font-family: "popin";
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-top: 1px;
+    text-indent: 15px;
+}
+
+p.e{
+    word-spacing: 1px;
+    color: rgb(12, 12, 80);
+    font-family: "popin";
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-top: 1px;
+    text-indent: 15px;
+}
+
+h3.c{
+    text-align: left;
+    font-family: "jambo";
+    color: rgb(62, 0, 128);
+    text-shadow:0 0 10px rgb(196, 142, 250), 0 0 25px rgb(196, 142, 250);
+}
+
+p.b{
+    font-family: "popin";
+}
+
+
+
+.attraction {
+    width: 95%;
+    margin: 30px auto 80px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    font-family: "popin";
+    align-items: left;
+}
+
+.map {
+    padding: 20px;
+    width: 58%;
+    position: relative;
+    display: block;
+    top: 40%;
+    align-items: left;
+    margin-top: 35px;
+}
+
+.map {
+    width: 100%;
+    display: block;
+    align-items: left;
+}
+
+.point {
+    position: absolute;
+    width: auto;
+    min-width: 75px;
+    height: 50px;
+    padding: 5px 10px;
+    border-radius: 5%;
+    background-color: white;
+    font-family: "popin";
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.point:hover {
+    transform: scale(1.15);
+    background-color: #041098;
+    color: white;
+}
+
+.snw {
+    right: 14%;
+    bottom: 29%;
+    color:rgb(255, 229, 36);
+    background-color: rgb(216, 9, 9);
+}
+
+.mnn {
+    left: 43.5%;
+    top: 1%;
+    border: 2px rgb(255, 193, 9);
+    color: rgb(255, 247, 0);
+    background-color: #edc200;
+}
+
+.herip{
+    left: 50%;
+    top: 78%;
+    text-shadow: none;
+    box-shadow: none;
+    font-family: "popin";
+    color: azure;
+    background-color: grey;
+}
+
+.amity {
+    left: 64.2%;
+    top: 38%;
+    color: plum;
+    background-color: rebeccapurple;
+}
+
+.jp {
+    right: 21%;
+    top: 18%;
+    color: rgb(152, 212, 109);
+    background-color: rgb(62, 82, 12);
+}
+
+.ny {
+    left: 28.5%;
+    top: 8%;
+    color: rgb(162, 196, 94);
+    background-color: green;
+}
+
+.hoyi {
+    left: 22%;
+    top: 33%;
+    color: cornsilk;
+    background-color: indianred;
+}
+
+.area-container{
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    font-family: "popin";
+    padding-left: 20px;
+    align-items: center;
+}
+
+.area-section {
+    width: 85%;
+    margin: 100px auto;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.area-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 27px;
+}
+
+
+
+h1.a{
+    font-size: 35px;
+    margin-bottom: 30px;
+    padding-top: 5px;
+}
+
+h1.a:hover{
+   transform: scale(1.1);
+   transition: 0.3s ease;
+   color: #041098;
+   text-shadow: 0 0 5px lightblue 0 0 25px lightblue;
+}
+
+h2.f{
+    color: #041098;
+    text-shadow: #041098;
+}
+
+.area-main-image {
+    width: 70%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.area-main-image:hover{
+    overflow:e;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+} 
+
+
+.area-info {
+    width: 85%;
+    margin: 0 auto 40px;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+    text-indent: 15px;
+    word-spacing: 3px;
+    padding: 15px;
+}
+
+h2.f {
+    color: #041098;
+    text-shadow:
+        0 0 5px rgb(192, 237, 255),
+        0 0 25px rgb(192, 237, 255);
+}
+
+
+.attraction-button {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 35px;
+    padding: 15px;
+}
+
+.attraction-button a {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: #e60012;
+    color: white;
+    font-family: "popin";
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.attraction-button a:hover {
+     transform: scale(1.1);
+     overflow:visible;
+   transition: 0.3s ease;
+}
+
+
+
+.attraction-detail {
+    display: none;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.attraction-detail:target {
+    display: flex;
+}
+
+
+.attraction-detail img {
+    width: 40%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.attraction-detail img:hover {
+    transition: 0.3s ease;
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.attraction-text {
+    flex: 1;
+}
+
+.attraction-text h3 {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.attraction-text p {
+    font-size: 16px;
+text-indent: 15px;
+    line-height: 1.7;
+    text-align: justify;
+    word-spacing: 1px;
+}
+h3.q{
+    color: rgb(204, 255, 199);
+     text-shadow:
+        0 0 5px rgb(0, 84, 22),
+        0 0 25px rgb(0, 52, 14);
+}
+h3.p{
+    color:rgb(255, 247, 247);
+     text-shadow:
+        0 0 5px rgb(0, 0, 0),
+        0 0 25px rgba(0, 0, 0, 0.15);
+    }
+h1.h{
+    color: darkseagreen;
+    text-shadow:
+        0 0 5px rgb(0, 52, 14),
+        0 0 25px rgb(0, 52, 14);
+    font-size: 35px;
+}
+h1.h:hover{
+    color: rgb(21, 96, 21);
+    text-shadow: 0 0 5px rgb(1, 32, 0) 0 0 25px rgb(1, 32, 0);
+    overflow: visible;
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+h2.d{
+    color:aquamarine;
+     text-shadow:
+        0 0 5px rgb(0, 52, 14),
+        0 0 25px rgb(0, 52, 14);
+}
+h3.ab{
+    color: palegreen;
+    text-shadow:
+        0 0 5px rgb(0, 52, 14),
+        0 0 25px rgb(0, 52, 14);
+}
+
+.attraction-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 35px;
+    padding: 15px;
+}
+
+.attraction-buttons a {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: #006e12;
+    color: white;
+    font-family: "popin";
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.attraction-buttons a:hover {
+     transform: scale(1.1);
+     overflow:visible;
+   transition: 0.3s ease;
+}
+h1.n{
+    color: rgb(255, 168, 212);
+    text-shadow:
+        0 0 5px hotpink,
+        0 0 25px hotpink;
+    font-size: 35px;
+}
+h1.n:hover{
+    color:mediumvioletred;
+    text-shadow: 0 0 5px hotpink 0 0 25px hotpink;
+    overflow: visible;
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+.attraction-buttonse {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 35px;
+    padding: 15px;
+}
+
+.attraction-buttonse a {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color:rgb(13, 130, 130);
+    color: white;
+    font-family: "popin";
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+text-shadow: 0 0 5px rgb(13, 13, 41) 0 0 25px rgb(13, 13, 41);
+
+}
+
+.attraction-buttonse a:hover {
+     transform: scale(1.1);
+     overflow:visible;
+   transition: 0.3s ease;
+}
+h2.c{
+    color: rgb(245, 255, 168);
+    text-shadow:
+        0 0 5px rgb(223, 85, 61),
+        0 0 25px rgb(255, 193, 9);
+    font-size: 35px;
+}
+h2.c:hover{
+    overflow: visible;
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+h3.j{
+    color: #e60012;
+    text-shadow:
+        0 0 5px rgb(146, 91, 91),
+        0 0 25px rgb(148, 99, 99);
+}
+h3.j:hover{
+    color:lightblue;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    overflow: visible;
+}
+
+h1.y{
+    margin-top:40px;
+    font-size: 50px;
+    font-family: "zola";
+    background-size: 300%;
+    background-position: -100%;
+    color: rgb(144, 26, 49);
+    text-shadow: 0 0 5px pink, 0 0 25px pink;
+}
+h1.y:hover{
+    overflow: visible;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    color: maroon;
+}
+h2.s{
+color: #e60012;
+  text-shadow: 0 0 5px pink, 0 0 25px pink;
+}
+.attraction-buttonsj {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 35px;
+    padding: 15px;
+}
+
+.attraction-buttonsj a {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color:rgb(56, 197, 197);
+    color: rgb(255, 37, 37);
+    font-family: "popin";
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+text-shadow: 0 0 5px rgb(13, 13, 41) 0 0 25px rgb(13, 13, 41);
+}
+
+.attraction-buttonsj a:hover {
+     transform: scale(1.1);
+     overflow:visible;
+   transition: 0.3s ease;
+}
+h1.w{
+    margin-top:40px;
+    font-size: 50px;
+    font-family: "zola";
+    background-size: 300%;
+    background-position: -100%;
+    color: rgb(18, 4, 107);
+    text-shadow: 0 0 5px rgb(139, 25, 154), 0 0 25px rgb(192, 32, 195);
+}
+h1.w:hover{
+    overflow: visible;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    color: rgb(58, 0, 77);
+}
+h2.u{
+color: #570268;
+  text-shadow: 0 0 5px rgb(250, 176, 255), 0 0 25px rgb(237, 207, 250);
+}
+h1.t{
+color: #2c2d26;
+  text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 25px rgb(237, 207, 250);
+}
+h1.t{
+    margin-top:40px;
+    font-size: 50px;
+    font-family: "zola";
+    background-size: 300%;
+    background-position: -100%;
+    color: rgb(49, 48, 56);
+    text-shadow: 0 0 5px rgb(191, 179, 193), 0 0 25px rgb(193, 183, 193);
+}
+h1.t:hover{
+    overflow: visible;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    color: rgb(172, 94, 199);
+}
+.attraction-buttonsh {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 35px;
+    padding: 20px;
+}
+
+.attraction-buttonsh a {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color:rgb(38, 48, 48);
+    color: rgb(246, 239, 239);
+    font-family: "popin";
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+text-shadow: 0 0 5px rgb(13, 13, 41) 0 0 25px rgb(13, 13, 41);
+}
+
+.attraction-buttonsh a:hover {
+     transform: scale(1.1);
+     overflow:visible;
+   transition: 0.3s ease;
+}
+h2.o{
+color: #1d1a1e;
+  text-shadow: 0 0 5px rgb(254, 240, 255), 0 0 25px rgb(237, 207, 250);
+}
+h2.nama{
+    font-family: "popin";
+    color: lightslategrey;
+    text-shadow: none;
+    font-size: 17px;
+}
+
+a.backtohome{
+    display:flexbox;
+    background-color: rgb(234, 39, 39);
+    box-shadow: 0 0 5px rgb(206, 140, 35), 0 0 25px rgb(239, 147, 61);
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "zola";
+    color: rgb(255, 255, 173);
+    padding: 12px 25px;
+    border-radius: 5px;
+    height: 20px;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+a:hover{
+    overflow:visible;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.f{
+    color: whitesmoke;
+    font-family: "popin";
+}

@@ -1,0 +1,38 @@
+table, th, td{
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    font-family: "Poppins";
+}
+@font-face{
+    font-family:"Poppins";
+    src: url(light.ttf);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    height: 30px;
+    background-color: navy;
+}
+td{
+    text-align: center;
+    padding: 5px;
+}
+th:hover{
+    background-color:lightpink;
+}
+tr:nth-child(even){
+    background-color:lightskyblue;
+}
+tr:nth-child(even):hover{
+    background-color:azure;
+}
+tr:nth-child(odd){
+    background-color:skyblue;
+}
+tr:nth-child(odd):hover{
+    background-color:cornflowerblue;
+}

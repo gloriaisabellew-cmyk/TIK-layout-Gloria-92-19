@@ -1,0 +1,102 @@
+@font-face{
+    font-family:"popin";
+    src: url(Poppins-Bold.ttf);
+}
+
+@font-face{
+    font-family:"Poppins";
+    src: url(light.ttf);
+}
+
+.header1{
+    background-color: azure;
+    padding: 20px;
+    text-align: center;
+    font-family: "popin";
+}
+
+h3{
+    font-family: "popin";
+    color: rgb(8, 32, 103);
+    text-align: center;
+}
+ol{
+    font-family: "Poppins";
+    background-color:lightsteelblue;
+    color: rgb(8, 32, 103);
+    border: 1px solid black;
+    list-style-type: upper-roman;
+    padding: 15px 30px;
+    margin: 10px;
+    list-style-position: inside;
+}
+
+li.a{
+    background-color:cornflowerblue;
+    border: 1px solid black;
+}
+li.jambu{
+    font-family: "popin";
+    background-color: midnightblue;
+    color: mintcream;  
+    border: 2px solid azure;
+}
+ol li{ background-color: cornflowerblue;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border: 2px solid rgb(18, 18, 59);
+    text-align: justify;
+}
+ol li:hover{
+    background-color: aliceblue;
+}
+li.jambu:hover{
+    background-color: rgb(69, 69, 109);
+}
+
+
+ul{
+    font-family: "Poppins";
+    background-color:lightpink;
+    border: 3px solid hotpink;
+    list-style-type: circle;
+    padding: 15px 30px;
+    margin: 10px;
+    list-style-position: inside;
+}
+li.b{border: 3px solid palevioletred;
+color:rgb(158, 21, 65);
+}
+
+ul li{ background-color:honeydew;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border: 2px solid rgb(166, 13, 67);
+    text-align: justify;
+}
+ul li:hover{
+    background-color:snow;
+}
+
+ul.c{
+    font-family: "Poppins";
+    background-color:palegoldenrod;
+    border: 3px solid rgb(255, 230, 0);
+    list-style-type: circle;
+    padding: 15px 30px;
+    margin: 10px;
+    list-style-position: inside;
+}
+li.c{border: 3px solid rgb(216, 186, 49);
+color:rgb(93, 93, 12);
+}
+
+ul li{ background-color:lemonchiffon;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border: 2px solid goldenrod;
+    text-align: justify;
+}
+ul li:hover{
+    background-color:snow;
+}

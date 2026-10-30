@@ -1,0 +1,627 @@
+
+
+html{
+    box-sizing:border-box ;
+}
+
+
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family:serif;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin:0;
+}
+div.lagu{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.container{
+    background-color:oldlace ;
+    height: 500px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    text-align: center;
+    margin: 30px auto;
+    padding: 15px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container:hover{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+h2.music-title{
+    font-size: 30px;
+    color: #d5dcff;
+    text-align: center;
+    width: 150px;
+    margin: 10px auto;
+}
+h3.music-artist-1{
+    font-family:"cheese";
+    color: #122846;
+    font-size: 22px;
+}
+
+h3.music-artist-2{
+    font-family:"cheese";
+    color: #dfb63a;
+    font-size: 18px;
+}
+
+h3.music-artist-3{
+    font-family:"cheese";
+    color: #a75b05;
+    font-size: 18px;
+}
+
+h2.music-title-3{
+    font-size: 20px;
+    color: #ffedd5;
+    text-align: center;
+    width: 180px;
+    margin: 10px auto;
+    background-color: rgb(255, 145, 0);
+}
+
+h2.music-title-2{
+    font-size: 20px;
+    color: #fffcca;
+    text-align: center;
+    width: 200px;
+    margin: 10px auto;
+    font-family: "heyam";
+    background-color: rgb(255, 188, 4);
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.player-controls {
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.player-controls .play-button {
+    font-size: 36px;
+}
+
+.player-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    position: static;
+    padding: 10px;
+}
+
+.player-img img {
+    padding: 0;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.player-img img.active{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+
+}
+
+.player-img:hover img{
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.music-layout-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    width: 95px;
+    margin: 40px auto;
+}
+
+.player-progress {
+    background-color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px auto 10px;
+    height: 6px;
+    width: 80%;
+    position: relative;
+}
+
+.progress {
+    background-color: #212121;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+    margin-top: 15px;
+}
+
+.music-duration {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 10px auto 30px;
+    font-size: 14px;
+    color: #212121;
+}
+
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.player-controls-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-top: 20px;
+    width: 100%;
+    bottom: 30%;
+}
+
+.fa-solid {
+    font-size: 30px;
+    color: #212121;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.fa-solid:hover {
+    filter: brightness(150%);
+}
+
+.play-button {
+    font-size: 44px;
+}
+
+/* format font : .otf/.ttf */
+@font-face{
+    font-family: "heyam";
+    src: url(Heyam.ttf);
+}
+
+@font-face{
+    font-family:"cheese";
+    src: url(Cheesel.otf);
+}
+
+@font-face{
+    font-family:"light";
+    src: url(light.ttf);
+}
+
+.biodata {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.content {
+  text-align: left;
+  display: flex;             
+  align-items: center;     
+  gap: 20px;               
+  background-color:rgba(255, 243, 196, 0.508);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.416);
+  padding: 20px;
+  border-radius: 6px;
+  width: 750px;
+  letter-spacing: 2px;
+  font-family:"light";
+}
+.info{
+     text-align: left;
+     
+    letter-spacing: 2px;
+    }
+.foto {
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  flex-shrink: 0;
+  border: 3px;
+  border-color: #122846;
+}
+
+.foto-inner, .foto-front, .foto-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.foto-inner {
+  position: relative;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.foto:hover .foto-inner {
+  transform: rotateY(180deg);
+}
+
+.foto-front, .foto-back {
+  position: absolute;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.foto-back {
+  transform: rotateY(180deg);
+}
+
+
+h1{ background-color: rgb(246, 235, 135);
+    color:rgb(83, 172, 228);
+    text-align: center;
+    letter-spacing: 5px;
+    height: 40px;
+    outline: 2px beige;
+    font-family: "cheese";
+    font-size: 30px;
+    text-shadow: 0 5px 8px 0;
+    text-shadow: #122846;
+}
+h2{
+    font-size:20;
+    text-align: center;
+    align-items: center;
+    color: honeydew;
+    background-color: rgb(9, 20, 41);
+    font-family: "heyam";
+    border-radius: 6px;
+    border: 3px;
+    width: 250px;
+}
+.photo{
+    height: 250px;
+    width: 230px;
+    border-radius: 6px;
+    padding: 12px 20px;
+    border: 3px;
+}
+.efek:hover{
+    transition: transform 2s ease;
+    transform: scale(1.1);
+}
+
+div.info{
+    font-family:"light";
+    color: rgb(169, 199, 255);
+    box-shadow: deepskyblue;
+    box-shadow: 35px;
+    border-radius: 10px;
+    width: 470px;
+    border: 3px solid rgb(248, 248, 255);
+    background-color:rgb(16, 16, 80);
+}
+h2{
+    font-size:20;
+    text-align: center;
+    align-items: center;
+    color: honeydew;
+    background-color: rgb(9, 20, 41);
+    font-family: "heyam";
+    text-align: center;
+    border-radius: 6px;
+    border: 3px;
+    width: 250px;
+}
+div.makanan{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{padding: 10px;}
+div.sushi{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(35, 35, 35);
+    margin-bottom: 25px;
+    background-color:lightyellow
+}
+div.sushi:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.a{
+    background-color:midnightblue;color: lightskyblue; height: 65px;border-radius: 6px 6px 15px 15px; font-family: "heyam";
+}
+div.pisanggoreng{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow:  0 4px 8px 0 rgb(35, 35, 35);
+    margin-bottom: 25px;
+    background-color: lemonchiffon;
+}
+div.pisanggoreng:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.b{background-color: darkgoldenrod;color:bisque; height: 65px;border-radius: 6px 6px 15px 15px;font-family: "heyam";}
+div.pasta{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(35, 35, 35);
+    text-align: center;
+    margin-bottom: 25px;
+    background-color:maroon
+}
+div.pasta:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.c{background-color:rgb(170, 25, 25);color: rgb(250, 202, 106); height: 65px;border-radius: 6px 6px 15px 15px; font-family: "heyam";}
+h2{
+    font-size:20;
+    color: honeydew;
+    background-color: rgb(9, 20, 41);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-radius: 6px;
+    border: 3px;
+    width: 250px;
+}
+div.minuman{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{padding: 10px;}
+div.chagee{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(35, 35, 35);
+    margin-bottom: 25px;
+    background-color:skyblue
+}
+div.chagee:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.d{background-color:rgb(9, 20, 41);color:lightblue; height: 60px;border-radius: 6px 6px 15px 15px;font-family: "heyam";}
+div.choco{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow:  0 4px 8px 0 rgb(35, 35, 35);
+    margin-bottom: 25px;
+    background-color:sienna;
+}
+div.choco:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.e{background-color:chocolate;color:bisque; height: 60px;border-radius: 6px 6px 15px 15px;font-family: "heyam";}
+div.boost{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(35, 35, 35);
+    margin-bottom: 25px;
+    background-color:darkolivegreen
+}
+div.boost:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.f{background-color:forestgreen;color:antiquewhite; height: 60px;border-radius: 6px 6px 15px 15px;font-family: "heyam";}
+h2{
+    font-size:20;
+    color: honeydew;
+    background-color: rgb(9, 20, 41);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-radius: 6px;
+    border: 3px;
+    width: 250px;
+}
+div.film{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{padding: 10px;}
+div.pp{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(35, 35, 35);
+    margin-bottom: 25px;
+    background-color:rgb(106, 181, 255)
+}
+div.pp:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.g{background-color:rgb(0, 94, 183);color: rgb(255, 137, 214); height: 55px;border-radius: 6px 6px 15px 15px; font-family: "heyam";}
+div.hsm{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow:  0 4px 8px 0 rgb(35, 35, 35);
+    margin-bottom: 25px;
+    background-color:darkred;
+}
+div.hsm:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.h{background-color:rgb(157, 0, 0);color: rgb(250, 202, 106); height: 55px;border-radius: 6px 6px 15px 15px; font-family: "heyam";}
+div.wc{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(35, 35, 35);
+    margin-bottom: 25px;
+    background-color:rgb(61, 189, 221)
+}
+div.wc:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.i{background-color:rgb(8, 53, 107);color: rgb(255, 62, 197); height: 55px;border-radius: 6px 6px 15px 15px; font-family: "heyam";}
+h2{
+    font-size:20;
+    color: honeydew;
+    background-color: rgb(9, 20, 41);
+    font-family:"heyam";
+    text-align: center;
+    border-radius: 6px;
+    border: 3px;
+    width: 250px;
+}
+div.hobi{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{padding: 10px;}
+div.basket{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 15px 15px 0 rgb(35, 35, 35);
+    margin-bottom: 25px;
+    background-color:rebeccapurple
+}
+div.basket:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.j{background-color:rgb(57, 13, 113);color: rgb(250, 202, 106); height: 45px;border-radius: 6px 6px 15px 15px; font-family: "heyam";}
+div.musik{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow:  0 4px 8px 0 rgb(35, 35, 35);
+    margin-bottom: 25px;
+    background-color:khaki;
+}
+div.musik:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.k{background-color:rgb(255, 200, 0);color: rgb(255, 238, 205); height: 45px;border-radius: 6px 6px 15px 15px; font-family: "heyam";}
+div.nonton{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(35, 35, 35);
+    margin-bottom: 25px;
+    background-color:peru
+}
+div.nonton:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.l{background-color:rgb(136, 62, 4);color: rgb(252, 234, 199); height: 45px;border-radius: 6px 6px 15px 15px; font-family: "heyam";}
+
+h2{
+    font-size:20;
+    color: honeydew;
+    background-color: rgb(9, 20, 41);
+    font-family:"heyam";
+    text-align: center;
+    border-radius: 6px;
+    border: 3px;
+    width: 250px;
+}
+div.dessert{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{padding: 10px;}
+div.churos{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 10px 15px 0 rgb(35, 35, 35);
+    margin-bottom: 25px;
+    background-color:rgb(226, 186, 137)
+}
+div.churos:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.m{background-color:rgb(189, 100, 32);color: rgb(252, 234, 199); height: 45px;border-radius: 6px 6px 15px 15px; font-family: "heyam";}
+div.dubai{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 10px 15px 0 rgb(35, 35, 35);
+    margin-bottom: 25px;
+    background-color:olive;
+}
+div.dubai:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.n{background-color:rgb(29, 117, 18);color: rgb(252, 234, 199); height: 45px;border-radius: 6px 6px 15px 15px; font-family: "heyam";}
+div.brownies{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 10px 15px 0 rgb(35, 35, 35);
+    margin-bottom: 25px;
+    background-color:saddlebrown
+}
+div.brownies:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+p.o{background-color:rgb(40, 18, 1);color: rgb(252, 234, 199); height: 45px;border-radius: 6px 6px 15px 15px; font-family: "heyam";}

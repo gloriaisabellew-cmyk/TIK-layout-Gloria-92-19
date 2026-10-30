@@ -1,0 +1,41 @@
+table, th, td{
+    border: 1px solid rgb(34, 51, 102);
+    text-align: center;
+    padding: 10px;
+    font-family: "Poppins";
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    height: 40px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+}
+th:hover{
+    background-color:lightskyblue;}
+tr:hover{
+    background-color: cornflowerblue;
+}
+@font-face{
+    font-family:"Poppins";
+    src: url(light.ttf);
+}
+tr{
+    background-color:lemonchiffon;
+    color: midnightblue;
+}
+tr:nth-child(even){
+    background-color:lightpink;
+}
+tr:nth-child(even):hover{
+    background-color: lightblue;
+}
+h2{
+    background-color: aliceblue;
+    text-align: center;
+    border: 2px;
+    border-radius: 20px;
+    color: cornflowerblue;
+}
